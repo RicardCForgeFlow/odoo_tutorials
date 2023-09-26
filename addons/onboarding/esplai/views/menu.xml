@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+            id="menu_esplai_root"
+            name="Esplai"
+            sequence="10"/>
+    <menuitem
+            id="menu_esplai_children"
+            name="Children"
+            parent="menu_esplai_root"
+            sequence="10"/>
+    <menuitem
+            id="menu_esplai_waiting"
+            name="Waiting List"
+            parent="menu_esplai_root"
+            sequence="10"/>
+</odoo>

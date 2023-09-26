@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_waiting_list" model="ir.actions.act_window">
+        <field name="name">Children on Waiting List</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esplai.child</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('on_waiting_list', '=', True)]</field>
+    </record>
+
+    <menuitem id="menu_waiting_list"
+              name="Waiting List"
+              parent="menu_esplai_root"
+              action="action_waiting_list"
+              sequence="10"/>
+</odoo>
