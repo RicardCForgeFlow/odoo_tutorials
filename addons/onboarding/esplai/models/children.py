@@ -20,7 +20,7 @@ class EsplaiChild(models.Model):
         ('no', 'No'),
     ], string="Need of special attention")
     schoolcourse = fields.Char(string='Course', compute='_compute_course', store=True)
-    on_waiting_list = fields.Boolean(string='On Waiting List', compute='_compute_waiting_list')
+    on_waiting_list = fields.Boolean(string='On Waiting List!', compute='_compute_waiting_list')
 
     @api.depends('birthdate')
     def _compute_age(self):
